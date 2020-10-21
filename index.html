@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>SVG Practice</title>
+</head>
+<body>
+    <div class="logo-wrapper">
+        <svg id="logo" width="200" height="310" viewBox="0 0 200 310" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2.5H90M2.5 0L2.5 90" stroke="black" stroke-width="5"/>
+            <path d="M87.5 155C87.5 178.472 68.4721 197.5 45 197.5C21.5279 197.5 2.5 178.472 2.5 155C2.5 131.528 21.5279 112.5 45 112.5C68.4721 112.5 87.5 131.528 87.5 155Z" stroke="black" stroke-width="5"/>
+            <path d="M90 222.5L2.5 222.5M2.5 222.5L0 222.5M2.5 222.5L2.5 220M2.5 222.5L2.50002 307.5M2.50002 307.5L2.50002 310M2.50002 307.5L90 307.5M2.50002 307.5H1.52588e-05" stroke="black" stroke-width="5"/>
+            <path d="M110 87.5L200 87.5M197.5 90L197.5 0M110 2.49999L200 2.49998" stroke="black" stroke-width="5"/>
+            <path d="M200 307.5L110 307.5M200 222.5L110 222.5M197.5 310L197.5 220M112.5 310L112.5 263M200 265.5L110 265.5" stroke="black" stroke-width="5"/>
+            <path d="M113.232 197.232L197.232 113.232" stroke="#FF9900" stroke-width="5"/>
+        </svg>
+    </div>
+
+    <script>
+        const logo = document.querySelectorAll("#logo path");
+        for(let i = 0; i< logo.length; i++){
+            console.log(logo[i].getTotalLength())
+        }
+    </script>
+</body>
+</html>
+    

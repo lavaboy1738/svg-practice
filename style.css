@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.logo-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+}
+
+/* letter R  */
+#logo path:nth-child(1){
+    stroke-dasharray: 180px;
+    stroke-dashoffset: 180px;
+    animation: stroke-animation 0.5s ease-in forwards;
+}
+
+/* letter O  */
+#logo path:nth-child(2){
+    stroke-dasharray: 268px;
+    stroke-dashoffset: 268px;
+    animation: stroke-animation 0.5s ease-in forwards 0.4s;
+}
+
+/* bottom left N  */
+#logo path:nth-child(3){
+    stroke-dasharray: 270px;
+    stroke-dashoffset: 270px;
+    animation: stroke-animation 0.5s ease-in forwards 0.3s;
+}
+
+/* top right N  */
+#logo path:nth-child(4){
+    stroke-dasharray: 270px;
+    stroke-dashoffset: 270px;
+    animation: stroke-animation 0.5s ease-in forwards 0.3s;
+}
+
+/* letter E */
+#logo path:nth-child(5){
+    stroke-dasharray: 407px;
+    stroke-dashoffset: 407px;
+    animation: stroke-animation 0.5s ease-in forwards;
+}
+
+/* letter I  */
+#logo path:nth-child(6){
+    stroke-dasharray: 118;
+    stroke-dashoffset: 118;
+    animation: stroke-animation 0.5s ease-in forwards 0.4s;
+}
+
+@keyframes stroke-animation{
+    to {
+        stroke-dashoffset: 0;
+    }
+}
